@@ -1,180 +1,109 @@
-/* Reset styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.navbar{
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  width :1686px;
+  height: 112px;
+  padding-top: 40px;
+  font-weight: bold;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top:20px;
+  padding-bottom:40px;
+  font-weight: normal;
 }
 
-header {
-    background-color: #333;
-    padding: 20px 0;
+a {
+  text-decoration: none;
+  color: black;
+  font-size:medium;
 }
 
-nav {
-    text-align: center;
-}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #555;
+a:hover{
+  color: blue;
 }
 
 .hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+  height: 500px;
+  width:100%;
+  background-image:linear-gradient(lightgrey,grey);
+  font-size: 100px;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+#Portfolio {
+  font-size:28px;
+  font-weight:400;
+  font-family: "Playfair Display", serif ;
 }
 
-.hero p {
-    font-size: 1.2em;
+#wlcmtext {
+  width:fit-content;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 100px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: black;
+  margin-left: 150px;
+}
+ 
+.image{
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.gallery {
-    padding: 50px 0;
+.name {
+  font-size:30px;
+  margin-left: 200px;
+  display: block;
+  width: 177px;
+  font-family: "Zain", sans-serif;
+  font-weight: 400  ;
+  font-style:normal;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-bottom: 100px;
 }
 
-.gallery h2 {
-    text-align: center;
-    margin-bottom: 30px;
+
+.who {
+  font-size: 100px;
+  padding: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  font-family: "EB Garamond", serif;
+  margin-left: 150px;
+  margin-top: 150px;
 }
 
-.gallery .photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.info {
+  font-size: 44px;
+  width: 1000px;
+  margin-left: 150px;
+  margin-top: 200px;
 }
 
-.gallery .photo {
-    flex: 1;
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.gallery .photo:hover {
-    transform: scale(1.05);
-}
-
-.gallery .photo img {
-    width: 100%;
-    height: auto;
-}
-
-.about {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact {
-    padding: 50px 0;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-label, input, textarea, button {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Media Queries for responsiveness */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .gallery .photo {
-        flex-basis: 45%;
-    }
-
-    form {
-        padding: 0 20px;
-    }
+footer{
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
