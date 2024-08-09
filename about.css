@@ -1,0 +1,52 @@
+  .navbar{
+    font-size: 1.4rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    width :1686px;
+    height: 112px;
+    padding-top: 40px;
+    font-weight: bold;
+  }
+  
+  .links{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:20px;
+    padding-bottom:40px;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size:medium;
+  }
+  
+  
+  a:hover{
+    color: blue;
+  }
+  
+  .hero {
+    height: 900px;
+    width:100%;
+  background-color: lightgrey;
+  }
+
+
+  #Portfolio {
+    font-size:28px;
+    font-weight:400;
+    font-family: "Playfair Display", serif ;
+  }
+
+  footer{
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
