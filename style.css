@@ -1,31 +1,29 @@
+/* Base styles (Desktop first) */
 .navbar{
   font-size: 1.4rem;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+  font-weight: bold;
   vertical-align: baseline;
   text-align: center;
-  width :1686px;
+  width: 100%; /* Use 100% width for better responsiveness */
   height: 112px;
   padding-top: 40px;
-  font-weight: bold;
 }
 
 .links{
   display: flex;
   justify-content: space-evenly;
-  padding-top:20px;
-  padding-bottom:40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   font-weight: normal;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size:medium;
+  font-size: medium;
 }
-
 
 a:hover{
   color: blue;
@@ -33,30 +31,26 @@ a:hover{
 
 .hero {
   height: 500px;
-  width:100%;
-  background-image:linear-gradient(lightgrey,grey);
+  width: 100%;
+  background-image: linear-gradient(lightgrey, grey);
   font-size: 100px;
 }
 
 #Portfolio {
-  font-size:28px;
-  font-weight:400;
-  font-family: "Playfair Display", serif ;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
 }
 
 #wlcmtext {
-  width:fit-content;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: fit-content;
+  padding: 50px;
   line-height: 100px;
   font-family: "Playfair Display", serif;
-  font-style: normal;
   color: black;
   margin-left: 150px;
 }
- 
+
 .image{
   background-color: black;
   height: 100px;
@@ -66,29 +60,23 @@ a:hover{
 }
 
 .name {
-  font-size:30px;
+  font-size: 30px;
   margin-left: 200px;
   display: block;
   width: 177px;
   font-family: "Zain", sans-serif;
-  font-weight: 400  ;
-  font-style:normal;
+  font-weight: 400;
   padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
   border: 2px solid black;
   border-radius: 50px;
   margin-bottom: 100px;
 }
 
-
 .who {
   font-size: 100px;
   padding: 20px;
-  padding-top: 15px;
   display: flex;
   justify-content: center;
-  display: inline-block;
   font-family: "EB Garamond", serif;
   margin-left: 150px;
   margin-top: 150px;
@@ -101,9 +89,102 @@ a:hover{
   margin-top: 200px;
 }
 
-footer{
+footer {
   height: 195px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Mobile styles (Small screens) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    height: 80px; /* Adjust height for smaller screens */
+  }
+
+  .links {
+    flex-direction: column; /* Stack links vertically */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hero {
+    height: 300px; /* Reduce hero section height for small screens */
+    font-size: 50px; /* Smaller font size for hero text */
+  }
+
+  #Portfolio {
+    font-size: 24px;
+  }
+
+  #wlcmtext {
+    margin-left: 20px; /* Reduce margin */
+    padding: 30px; /* Reduce padding */
+    line-height: 60px; /* Adjust line height */
+  }
+
+  .image {
+    height: 80px; /* Adjust image box size */
+    width: 80px;
+  }
+
+  .name {
+    font-size: 24px; /* Smaller font size for name */
+    margin-left: 20px; /* Adjust margin */
+    margin-bottom: 50px; /* Adjust margin */
+    width: auto; /* Allow name box to fit content */
+  }
+
+  .who {
+    font-size: 60px; /* Smaller font size for "who" text */
+    margin-left: 20px; /* Adjust margin */
+    margin-top: 80px; /* Adjust margin */
+  }
+
+  .info {
+    font-size: 32px; /* Smaller font size for info */
+    width: 90%; /* Use percentage width for responsiveness */
+    margin-left: 20px; /* Adjust margin */
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  footer {
+    height: auto; /* Adjust footer height */
+    padding: 20px;
+  }
+}
+
+/* Extra small screens (Mobile phones in portrait mode) */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    font-size: 1rem;
+    padding-top: 15px;
+    height: 60px;
+  }
+
+  .hero {
+    height: 250px;
+    font-size: 40px;
+  }
+
+  .links {
+    font-size: 1.1rem; /* Smaller font size for links */
+  }
+
+  .name {
+    font-size: 20px; /* Further reduce name font size */
+    margin-left: 10px;
+    width: auto;
+  }
+
+  .who {
+    font-size: 50px; /* Further reduce font size */
+    margin-top: 60px;
+  }
+
+  .info {
+    font-size: 28px; /* Smaller font size for info */
+  }
 }
