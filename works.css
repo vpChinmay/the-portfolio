@@ -1,128 +1,148 @@
-.navbar{
-  font-size: 1.4rem;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  vertical-align: baseline;
-  text-align: center;
-  width :1686px;
-  height: 112px;
-  padding-top: 40px;
-  font-weight: bold;
-}
-  
-.links{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top:20px;
-  padding-bottom:40px;
-  font-weight: normal;
-}
-  
-a {
-  text-decoration: none;
-  color: black;
-  font-size:medium;
-}
-  
-  
-a:hover{
-  color: blue;
-}
-  
-.hero {
-  height: 900px;
-  width:100%;
- background-image: linear-gradient(lightgrey,grey,darkgrey,black);
+/* Base styles */
+.navbar {
+    font-size: 1.4rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    width: 100%;
+    height: 112px;
+    padding-top: 40px;
 }
 
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+a:hover {
+    color: blue;
+}
+
+.hero {
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(lightgrey, grey, darkgrey, black);
+}
 
 #Portfolio {
-  font-size:28px;
-  font-weight:400;
-  font-family: "Playfair Display", serif ;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
 }
 
-
-  footer{
-  height: 195px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.myart{
-  font-size: 70px;
-  padding-left: 150px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  font-family: "Playfair Display", serif ;
-  display: block;
+.myart {
+    font-size: 70px;
+    padding-left: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: "Playfair Display", serif;
+    display: block;
 }
 
-/* 260 180 */
-.image-section{
-  display: flex;
-  justify-content: space-evenly;
+.image-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-
-.box1{
-  height: 500px;
-  width: 360px;
-  background-color: white;
-  background-image:url(wefox.jpg);
-  background-size: cover;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box1, .box2, .box3, .box4 {
+    height: 500px;
+    width: 360px;
+    background-color: white;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 
-.box2{
-  height: 500px;
-  width: 340px;
-  background-color: white;
-  background-image:url(acmshirt.jpg);
-  background-size: cover;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box2 {
+    width: 340px;
 }
 
-
-
-.box3{
-  height: 500px;
-  width: 400px;
-  background-color: white;
-  background-image:url(coffee-kettle.jpg);
-  background-size: cover;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box3 {
+    width: 400px;
 }
 
-
-
-.box4{
-  height: 500px;
-  width: 380px;
-  background-color: white;
-  background-image:url(ass-chair.jpg);
-  background-size: cover;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box4 {
+    width: 380px;
 }
-/* .container{
-  height: 400px;
-  width: 400ppx;
-  background-color: white;
-  border: 2px solid black;
-} */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1.2rem;
+        padding-top: 20px;
+        height: auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .myart {
+        font-size: 50px;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        height: 300px;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 1rem;
+    }
+
+    .links {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .myart {
+        font-size: 40px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        height: 250px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+}
